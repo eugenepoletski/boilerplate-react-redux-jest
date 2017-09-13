@@ -33,4 +33,11 @@ $ npm init
 |$ npm run build| make new production build |
 |$ npm run server| to be implemented... |
 |$ npm start | run development server with live reload |
-|$ npm test| run tests with Jest |
+|$ npm test| run tests with [Jest](https://facebook.github.io/jest/) |
+## Dependencies
+### Production
+* [React][1]
+* [Redux][2]
+
+[1]: https://react-bootstrap.github.io/ "React"
+[2]: https://react-bootstrap.github.io/ "Redux"
