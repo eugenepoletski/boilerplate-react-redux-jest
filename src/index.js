@@ -11,13 +11,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 let
   store = createStore(app),
-  rootEl;
-
-if ( !( rootEl = document.getElementById('root') ) ) {
-  rootEl = document.createElement('div');
-  rootEl.id = 'root';
-  document.body.appendChild(rootEl);
-}
+  rootEl = document.getElementById('root');
 
 ReactDOM.render(
   <Provider store={store}>

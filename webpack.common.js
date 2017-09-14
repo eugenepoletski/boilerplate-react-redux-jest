@@ -32,7 +32,8 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'bp-react-redux'
+      title: 'bp-react-redux',
+      template: 'src/index.template.ejs'
     })
   ]
 }
