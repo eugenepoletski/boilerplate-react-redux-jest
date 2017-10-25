@@ -17,7 +17,7 @@ $ cd project_folder_name
 ```
 4. remove existing git:
 ```
-$ rm -r ./git
+$ rm -r .git
 ```
 5. download node modules:
 ```
