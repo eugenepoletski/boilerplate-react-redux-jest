@@ -13,11 +13,18 @@ const config = merge(
     module: {
       rules: [
         {
-          test: /\.css$/,
-          use: ExtractTextPlugin.extract({
-            fallback: "style-loader",
-            use: "css-loader"
-          })
+          test: /\.s?css$/,
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                  modules: true,
+                  importLoaders: 1,
+                  localIdentName: '[name]__[local]___[hash:base64:5]'
+              }
+            },
+            'sass-loader'
+          ]
         }
       ]
     },
