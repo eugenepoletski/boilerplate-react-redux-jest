@@ -31,13 +31,17 @@ $ npm init
 |Command|Description|
 |-------|-----------|
 |$ npm run build| make new production build |
-|$ npm run server| to be implemented... |
+|$ npm run server| run production test server (serves static files from '/dist' and '/assets' project folders) |
 |$ npm start | run development server with live reload |
-|$ npm test| run tests with [Jest](https://facebook.github.io/jest/) |
+|$ npm test| run tests with [Jest](https://facebook.github.io/jest/) and [Enzyme](http://airbnb.io/enzyme/)|
 ## Dependencies
 ### Production
 * [React][1]
 * [Redux][2]
+* [Redux Thunk][3]
+* [Fetch (polyfill)][4]
 
-[1]: https://react-bootstrap.github.io/ "React"
-[2]: https://react-bootstrap.github.io/ "Redux"
+[1]: https://reactjs.org/ "React"
+[2]: http://redux.js.org/ "Redux"
+[3]: https://github.com/gaearon/redux-thunk "Redux Thunk"
+[4]: https://github.com/github/fetch "Fetch (polyfill)"
